@@ -23,7 +23,7 @@ cap1 = cv2.VideoCapture("tes.mp4")
 
 counter = 1
 def telesend(text):
-    url = "https://api.telegram.org/bot1416854022:AAH1fKZ1Jp4oNlzz7_B2q6KiDpQbj9pISng/sendMessage?chat_id=1473806670&parse_mode=Markdown&text=" + text
+    url = "https://api.telegram.org/token bot/sendMessage?chat_id=your telegram id&parse_mode=Markdown&text=" + text
     requests.get(url)
 
 net = cv2.dnn.readNetFromCaffe(config["object_model"], config["object_path"])
